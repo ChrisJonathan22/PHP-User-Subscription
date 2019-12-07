@@ -1,0 +1,24 @@
+/* subscribers page */
+
+.title {
+    padding: 10px 0 10px 0;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.list-group-item, .list-group-item label {
+    cursor: pointer;
+}
+
+.delete-btn {
+    padding: 20px 0 !important;
+}
+
+.selected-item {
+    color: #fff !important;
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
