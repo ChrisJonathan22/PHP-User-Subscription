@@ -22,3 +22,15 @@
     background-color: #dc3545 !important;
     border-color: #dc3545 !important;
 }
+
+.subscriber_count {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
