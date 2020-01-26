@@ -19,7 +19,12 @@
                 <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
+            <!-- Live -->
                 <a class="nav-link" href="/PHP-User-Subscription/subscribers.php">Subscribers</a>
+            <!-- Live -->
+            <!-- Offline -->
+                <!-- <a class="nav-link" href="/subscribers.php">Subscribers</a> -->
+            <!-- Offline -->
             </li>
             </ul>
         </div>
