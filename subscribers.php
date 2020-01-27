@@ -30,7 +30,7 @@
         </div>
     </nav>
     <div class='container'>
-        <h1 class='text-center title'>List of Subscribers</h1>
+        <h1 class='text-center title'>List of Subscribers haha</h1>
         <div class='card'>
             <form action ='./deleteUser.inc.php' method = 'POST'>
                 <ul class='list-group list-group-flush'>
