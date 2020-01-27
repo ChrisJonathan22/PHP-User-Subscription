@@ -20,10 +20,10 @@
             </li>
             <li class="nav-item">
             <!-- Live -->
-                <a class="nav-link" href="/PHP-User-Subscription/subscribers.php">Subscribers</a>
+                <!-- <a class="nav-link" href="/PHP-User-Subscription/subscribers.php">Subscribers</a> -->
             <!-- Live -->
             <!-- Offline -->
-                <!-- <a class="nav-link" href="/subscribers.php">Subscribers</a> -->
+                <a class="nav-link" href="/subscribers.php">Subscribers</a>
             <!-- Offline -->
             </li>
             </ul>

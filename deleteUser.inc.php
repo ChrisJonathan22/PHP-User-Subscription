@@ -32,12 +32,20 @@
     </nav>
     <h1 class='title text-center'>Deleted User</h1>
     <?php
+        $first = $_POST['first'];
+        $last = $_POST['last'];
+        $email = $_POST['email'];
         // Receive user data and escape strings
-        $email = mysqli_real_escape_string($conn, $_POST['email']);
+        // $email = mysqli_real_escape_string($conn, $email);
         echo "<p class='text-center'>This email ( $email ) has been deleted from the database.<p>";
 
-        // Create SQL query
+        // Create a SQL query to delete users
         $deleteUser = "DELETE FROM user_subscription WHERE user_email = '$email';";
+
+        // Create a SQL query to keep track of deleted users
+        $trackDeletedUsers = "INSERT INTO deleted_users (user_first, user_last, user_email)
+        ('$first', '$last', '$email')
+        ;";
         
         mysqli_query($conn, $deleteUser);
 
