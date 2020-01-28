@@ -46,7 +46,11 @@
                                 $first = $row['user_first'];
                                 $last = $row['user_last'];
                                 $email = $row['user_email'];
-                                echo "<input type='checkbox' hidden class='form-control' name='email' id=$email value=$email>";
+                                echo "
+                                    <input type='text' hidden class='form-control' name='email' id=$email value=$email>
+                                    <input type='text' hidden class='form-control' name='last' value=$last>
+                                    <input type='text' hidden class='form-control' name='first' value=$first>
+                                ";
                                 echo  "<li class='list-group-item'><label for=$email>" . $first . " " . $last . " - " . $email . "</label></li>";
                             }
                         }

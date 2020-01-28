@@ -44,10 +44,17 @@
 
         // Create a SQL query to keep track of deleted users
         $trackDeletedUsers = "INSERT INTO deleted_users (user_first, user_last, user_email)
-        ('$first', '$last', '$email')
-        ;";
+        VALUES ('$first', '$last', '$email');";
         
+        mysqli_query($conn, $trackDeletedUsers);
         mysqli_query($conn, $deleteUser);
+
+        // Select all deleted users and print the amount of deleted users
+        $getAllDeletedSubscribers = 'SELECT * FROM deleted_users;';
+        $result = mysqli_query($conn, $getAllDeletedSubscribers);
+        $resultCheck = mysqli_num_rows($result);
+        $text = $resultCheck > 1 ? "users" : "user";
+        echo "<p class='text-center'>You've deleted $resultCheck $text.</p>";
 
         // Redirect users back to the front page
         // header('Location: ../subscribers.php?user-deletion=success');
